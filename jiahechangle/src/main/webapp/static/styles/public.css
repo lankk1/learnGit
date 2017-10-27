@@ -1,0 +1,65 @@
+.left-d{
+  width: 60%;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  border-right: 1px solid #c8c8c8;
+  margin-bottom: 20px;
+  float: left;
+}
+.pageD nav{
+  position: absolute;
+  bottom: 10px;
+  background: none;
+}
+.titH2{
+  font-size: 2.5em;
+  padding: 10px;
+  font-weight: 400;
+  color: #3970B2;
+  margin: 10px 0;
+}
+.titH3{
+  padding: 10px 0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.titH3>h3{
+  font-size: 2em;
+  padding: 0 10px;
+  margin: 20px 0;
+  border-left: 3px solid #2b669a;
+  font-weight: 400;
+  color: #3970B2;
+}
+.size-s{
+  font-size: 0.5em;
+  display: inline-block;
+  padding-left: 10px;
+}
+.container{
+  margin-top: 10px;
+  width:60%;
+}
+
+.rightDiv{
+  width: 40%;
+  float: left;
+}
+.pagination>li{
+  padding: 0;
+}
+.body-l{
+  margin-top: 20px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.newsT{
+  padding: 20px;
+  line-height: 3em;
+  color: #000000;
+}
+.newsT a{
+  color: #808080;
+  text-decoration: none;
+}

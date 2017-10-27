@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jia.changle.dao.ClProductCustomMapper">
+  <resultMap id="ProductCustomMap" type="com.jia.changle.po.ClProduct"
+             extends="com.jia.changle.mapper.ClProductMapper.BaseResultMap"/>
+
+  <select id="search" resultMap="ProductCustomMap" parameterType="string">
+    SELECT
+    <include refid="com.jia.changle.mapper.ClProductMapper.Base_Column_List"/>
+    FROM cl_product WHERE
+    product_name LIKE concat('%', #{keyword}, '%')
+    or product_name_en LIKE concat('%', #{keyword}, '%')
+    or product_description LIKE concat('%', #{keyword}, '%')
+    or product_description_en LIKE concat('%', #{keyword}, '%')
+    limit 0, 10
+  </select>
+</mapper>

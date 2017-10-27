@@ -1,0 +1,31 @@
+
+.product-li{
+  width: 33%;
+  float: left;
+  padding: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+.product-detail{
+  display: none;
+  padding: 20px;
+  word-break: break-all;
+  line-height: 2;
+}
+
+.product-li>.img {
+  width: 100%;
+  background-size:100% 100%;
+  padding-bottom: 80%;
+  border: 1px solid darkgray;
+}
+
+.body-l ul:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.imgTit{
+  margin-top: 10px;
+}

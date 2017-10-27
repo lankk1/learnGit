@@ -1,0 +1,83 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  height: 5px;
+  background: #1359C0;
+}
+
+header {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header .search {
+  float: right;
+  margin-top: 38px;
+}
+
+.nav-container {
+  width: 80%;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  background: url("/static/images/nav-bg.png") repeat-x;
+  position: relative;
+  left: 12%;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 12px;
+  display: block;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 50px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.recommend {
+  background: url("../images/recommend-bg.jpg") no-repeat;
+  background-size: cover;
+  width: 90%;
+  margin:0 auto 40px auto;
+}
+
+.recommend-container .title {
+  padding-top: 30px;
+}
+
+.recommend-container ul {
+  margin-top: 30px;
+}
+
+.recommend-container li {
+  width: 18%;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.recommend-container li img {
+  border: 2px solid #32CBF7;
+  width: 100%;
+}
+
+.recommend-container .more {
+  margin: 30px auto;
+  padding: 5px 30px;
+}

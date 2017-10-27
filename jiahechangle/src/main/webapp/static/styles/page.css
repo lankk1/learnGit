@@ -1,0 +1,38 @@
+.page-container {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.page-container .page-container-title {
+  color: #034786;
+  margin: 0;
+}
+
+.page-container .page-container-left {
+  border-right: 1px solid #ccc;
+}
+
+.page-container .page-container-intro {
+  margin-top: 30px;
+}
+
+.page-container .page-container-right {
+  padding-left: 0;
+}
+
+.page-container .page-container-right .page-container-title {
+  border-left: 5px solid #034786;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.page-container-right .page-container-right-assist {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 20px 0 0 25px;
+}
+
+.page-container-title .sub-title {
+  font-size: 14px;
+  font-weight: 200;
+}

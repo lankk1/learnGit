@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- dataSource -->
+  <bean id="clDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+    <property name="jndiName">
+      <value>java:comp/env/jdbc/changledb_dev</value>
+    </property>
+  </bean>
+
+  <bean id="clSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
+    <property name="dataSource" ref="clDataSource"/>
+    <!-- 分页插件 -->
+    <property name="plugins">
+      <array>
+        <bean class="com.github.pagehelper.PageInterceptor">
+          <!--少了这句话会导致空指针异常-->
+          <property name="properties">
+            <value></value>
+          </property>
+        </bean>
+      </array>
+    </property>
+  </bean>
+  <!-- mapperScanner -->
+  <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+    <property name="basePackage" value="com.jia.changle.dao;com.jia.changle.mapper;" />
+    <property name="sqlSessionFactoryBeanName" value="clSqlSessionFactory" />
+  </bean>
+
+</beans>
